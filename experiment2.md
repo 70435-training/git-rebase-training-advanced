@@ -17,8 +17,7 @@ TuR: Tomcat Aufbau
 <div id="toc" />
 
 Hier beschreibe ich, wie ein Tomcat Aufbau E-Umgebung zu erfolgen hat.     
-Detailbeschreibung mit viel mehr Details findest du [hier (puppet4-tomcat-aufbau-detailbeschreibung.md)](puppet4-tomcat-aufbau-detailbeschreibung.md)  
-Weiterführende Informationen zum Tomcat Aufbau findest du [hier (puppet4-tomcat-aufbau-erweiterung.md)](puppet4-tomcat-aufbau-erweiterung.md)
+Und weiter im Text.
 
 <!-- TEASER_END -->
 
@@ -34,7 +33,7 @@ Tomcat Aufbau
 
 ## Beispiel: TuR Tomcat Aufbau
 
-**Aufgabe:** Tomcat turmasterdata analog turqpp auf dezuepagap099 aufbauen
+**Aufgabe 55:** Tomcat turmasterdata analog turqpp auf dezuepagap099 aufbauen
 
 **Informationen:**  
 * TuR E-Umgebung Server: dezuepagap099.porsche.org
@@ -53,15 +52,6 @@ Tomcat Aufbau
 
 #### Anpassung auf Puppet4 Repository puppet_hiera
 
-1. Wechsel zum Puppet4 Repository puppet_hiera (Verzeichnis)   
-2. Puppet4 Repository puppet_hiera -> Branch anlegen      
-   Individuellen Branch anlegen. Hierzu zuerst auf Branch *development* wechseln.   
-   **ACHTUNG:** Branch für puppet_hiera muss immer von "origin/development" abzweigen.      
-3. Zu ändernde Profile-Datei (yaml) suchen (**tur**)       
-4. Anpassen der Profile yaml-Datei für Tomcat turmasterdata -> puppet_hiera/profile/tur/     
-   Als Basis die Datei "turqpp.yaml" verwenden und den Text "turqpp" durch "turmasterdata" ersetzen -> Datei "turmasterdata.yaml"      
-   `judith@blackvaio:~/projects/puppet/puppet_hiera/profile/tur$ sed -e "s/turqpp/turmasterdata/g" ./turqpp.yaml > ./turmasterdata.yaml`    
-5. Änderungen in Git einchecken   
 6. Wechsel auf Freeway Server  -> https://freeway.porsche.org/webapp/puppet_hiera -> Anmelden   
 7. Projects -> puppet_hiera -> Merge Requests -> individuellen Branch aus Liste auswählen   
 8. Merge nach **development**  -> Merge Request erstellen (Create Merge Request)
