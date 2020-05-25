@@ -22,14 +22,14 @@ Weiterführende Informationen zum Tomcat Aufbau findest du [hier (puppet4-tomcat
 
 <!-- TEASER_END -->
 
-Voraussetzung
+Voraussetzung ist hier überflüssig
 --------------
 
 Server ist aufgesetzt (inkl. Apache) und 
 es existiert bereits mindestens 1 Tomcat auf dem Server.
 
 
-Tomcat Aufbau
+Tomcat Aufbau - Später
 -------------
 
 ## Beispiel: TuR Tomcat Aufbau
